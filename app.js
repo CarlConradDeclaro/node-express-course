@@ -1,6 +1,14 @@
- const _ = require('lodash')
+const http = require('http')
 
- const items = [1,[2,[3,[4]]]]
- const newItem = _.flattenDeep(items)
- console.log(newItem);
- 
+const server = http.createServer((req,res)=>{
+    if (req.url === '/') {
+        res.end('Welcome to our home spage')
+      } 
+})
+
+
+server.listen(3000,()=>{
+
+    console.log("Server running on 3000");
+
+})
