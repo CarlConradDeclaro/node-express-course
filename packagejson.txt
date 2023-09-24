@@ -4,8 +4,9 @@
   "description": "",
   "main": "1-util.js",
   "scripts": {
-   "start" : "nodemon  app.js"
- 
+ // it can be node app.js and you can git rid of the "dev"
+   "start" : "nodemon  app.js",
+   "dev":  "nodemon app.js"
   },
   "keywords": [],
   "author": "",
